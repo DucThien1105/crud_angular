@@ -1,0 +1,22 @@
+.row {
+    display: flex;
+    gap: 20px;
+}
+mat-form-field {
+    width: 100%;
+}
+.mat-radio-label-content {
+    padding-left: 0 !important;
+    padding-right: 8px !important;
+}
+.gender {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.action {
+    width: 100%;
+}
+
+button{
+    flex: 1;
+}

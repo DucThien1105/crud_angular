@@ -1,0 +1,63 @@
+<!-- Title -->
+<div mat-dialog-title>
+  <h1>NEW USER</h1>
+</div>
+<!-- Content -->
+<form [formGroup]="userForm" (ngSubmit)="onFormSubmit()">
+  <div mat-dialog-content class="content">
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>First Name</mat-label>
+        <input matInput placeholder="Name" placeholder="Ex. Thien" formControlName="firstName" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Last Name</mat-label>
+        <input matInput placeholder="Name" placeholder="Ex. Duc" formControlName="lastName"/>
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input
+          matInput
+          placeholder="Name"
+          placeholder="Ex. angular@gmail.com"
+          formControlName="email"
+        />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Date of birth</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="dob"/>
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker" ></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+
+    <div class="row gender">
+      <mat-radio-group aria-label="Select an option" formControlName="gender">
+        <mat-label>Gender &nbsp;</mat-label>
+        <mat-radio-button value="Female">Female &nbsp;</mat-radio-button>
+        <mat-radio-button value="Male">Male &nbsp;</mat-radio-button>
+        <mat-radio-button value="Other">Other &nbsp;</mat-radio-button>
+      </mat-radio-group>
+    </div>
+
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Education</mat-label>
+        <mat-select formControlName="education">
+          <mat-option *ngFor="let edu of education" [value]="edu">
+            {{edu}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  <!-- Button -->
+  <div mat-dialog-actions class="action">
+    <button mat-raised-button>Cancel</button>
+    <button mat-raised-button color="primary" type="submit">Update</button>
+  </div>
+</form>
