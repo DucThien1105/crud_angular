@@ -1,23 +1,40 @@
 {
-    "user": [
-        {
-            "id": 1,
-            "firstName": "Brinn",
-            "lastName": "Jephcote",
-            "email": "bjephcote0@archive.org",
-            "dob": "1981-10-05T12:09:39Z",
-            "gender": "Female",
-            "education": "Graduate"
-        },
-        {
-            "id": 2,
-            "firstName": "Kenneth",
-            "lastName": "MacElholm",
-            "email": "kmacelholm1@sina.com.cn",
-            "dob": "1991-09-12T22:14:02Z",
-            "gender": "Male",
-            "education": "Matric"
-            
-        }
-    ]
+  "user": [
+    {
+      "firstName": "Đức Phạm",
+      "lastName": "Thiện ưerere",
+      "email": "email@gmail.com",
+      "dob": "2023-12-19T17:00:00.000Z",
+      "gender": "Female",
+      "education": "TNUT",
+      "id": 1
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "dob": "",
+      "gender": "",
+      "education": "",
+      "id": 2
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "dob": "",
+      "gender": "",
+      "education": "",
+      "id": 3
+    },
+    {
+      "firstName": "ádasd",
+      "lastName": "ádasd",
+      "email": "pham@gmail.com",
+      "dob": "2023-12-11T17:00:00.000Z",
+      "gender": "Male",
+      "education": "TNUT",
+      "id": 4
+    }
+  ]
 }
