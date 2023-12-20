@@ -1,11 +1,9 @@
-<mat-toolbar>
-  <span>CRUD APP</span>
-  <span class="example-spacer"></span>
+<div class="titlee">
+  <h1>CRUD APP</h1>
   <button mat-raised-button color="primary" (click)="openDialogAddUser()">
     ADD USER
   </button>
-</mat-toolbar>
-
+</div>
 <div class="main-body">
   <mat-form-field>
     <mat-label>Filter</mat-label>
@@ -65,14 +63,14 @@
 
       <!-- action Column -->
       <ng-container matColumnDef="action">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Action</th>
         <td mat-cell *matCellDef="let row">
           <button mat-icon-button color="primary" (click)="openEditUser(row)">
             <mat-icon>edit</mat-icon>
           </button>
           <button mat-icon-button color="warn" (click)="deletetUser(row.id)">
             <mat-icon>delete</mat-icon>
-          </button> 
+          </button>
         </td>
       </ng-container>
 
